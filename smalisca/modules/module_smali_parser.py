@@ -410,7 +410,7 @@ class SmaliParser(ModuleBase):
         # The call looks like this
         #  <destination class>) -> <method>(args)<return value>
         match = re.search(
-            '(?P<local_args>\{.*\}),\s+(?P<dst_class>.*);->' +
+            '(?P<local_args>\{.*\}),\s+(?P<dst_class>.*)->' +
             '(?P<dst_method>.*)\((?P<dst_args>.*)\)(?P<return>.*)', data)
 
         if match:
